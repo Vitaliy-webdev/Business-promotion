@@ -1,3 +1,4 @@
+/*#region === Osnova === */
 body {
     font-family: "Poppins", serif;
     margin: 0;
@@ -7,8 +8,6 @@ body {
     color: #22343d;
     margin: 0;
 }
-
-/*#region === Osnova === */
 
 h1,
 h2,
@@ -68,7 +67,6 @@ address {
 }
 
 /*#endregion === Osnova === */
-
 
 
 /*#region === Header === */
@@ -162,6 +160,8 @@ address {
 
 
 
+/* #region Product Page */
+
 /*#region === Section 1 === */
 
 .hero {
@@ -216,20 +216,19 @@ address {
 .button-watch {
     font-weight: 600;
     font-size: 16px;
+    display: flex;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #02897a;
-    width: 164px;
-    height: 23px;
+    width: 137;
+    height: 24px;
     border: none;
+    gap: 9px;
     text-decoration: underline;
-    text-decoration-skip-ink: none;
     background-color: #fff;
 }
 
 /*#endregion === Section 1 === */
-
-
 
 /*#region === Section 2 === */
 
@@ -263,7 +262,6 @@ address {
     font-weight: 600;
     font-size: 22px;
     color: #22343d;
-    margin-top: 50px;
     margin-bottom: 13px;
     text-align: left;
 }
@@ -285,9 +283,14 @@ address {
     margin: 0 auto;
 }
 
+.icon-product {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
 /*#endregion === Section 2 === */
-
-
 
 /*#region === Section 3 === */
 
@@ -343,8 +346,6 @@ address {
 
 /*#endregion === Section 3 === */
 
-
-
 /*#region === Section 4 === */
 
 .support-section {
@@ -388,9 +389,34 @@ address {
     gap: 25px;
 }
 
+.support-icon-div {
+    display: flex;
+    border: 2.92px solid #fff;
+    border-radius: 14px;
+    width: 35px;
+    height: 35px;
+    background: #f90;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.red {
+    background: #f03e3d;
+}
+
+.blue {
+    background: #4d8dff;
+}
+
+.support-list-item {
+    display: flex;
+}
+
 /*#endregion === Section 4 === */
-
-
 
 /*#region === Section 5 === */
 
@@ -444,8 +470,6 @@ address {
 }
 
 /*#endregion === Section 5 === */
-
-
 
 /*#region === Section 6 === */
 
@@ -538,8 +562,6 @@ address {
 
 /*#endregion === Section 6 === */
 
-
-
 /*#region === Section 7 === */
 
 .Strategy-section {
@@ -606,13 +628,10 @@ address {
 
 /*#endregion === Section 7 === */
 
-
-
 /*#region === Section 8 === */
 
 .Table-section {
     padding-top: 0;
-    padding-bottom: 100px;
 }
 
 .tab-div {
@@ -783,6 +802,157 @@ address {
 }
 
 /*#endregion === Section 8 === */
+
+/*#region === Section 9 === */
+
+.clients {
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.client-div {
+    display: block;
+}
+
+.client-div-two {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.client-h {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.78125;
+    margin-bottom: 10px;
+    letter-spacing: 0.01em;
+    color: #22343d;
+    margin-top: 98px;
+}
+
+.client-desr {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #22343d;
+    margin-bottom: 40px;
+    max-width: 537px;
+    align-self: center;
+}
+
+.client-list {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.client-list-item {
+    width: calc((100% - (64 * 2px)) / 3);
+    border-radius: 5px;
+    border: 1px solid #dedede;
+}
+
+.client-list-stars {
+    display: flex;
+    margin-left: 28px;
+    margin-top: 28px;
+}
+
+.star-icon {
+    fill: #f3cd03;
+}
+
+.client-list-stars-item {
+    gap: 4px;
+}
+
+.client-p {
+    margin-right: 26px;
+    margin-left: 26px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    color: #737373;
+}
+
+.client-img-list {
+    display: flex;
+    margin-left: 26px;
+    margin-bottom: 28px;
+}
+
+.client-h-item-item {
+    font-weight: 600;
+    margin-left: 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #02897a;
+}
+
+.client-item-p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71429;
+    letter-spacing: 0.01em;
+    margin-left: 14px;
+    color: #252b42;
+}
+
+/*#endregion === Section 9 === */
+
+/* #endregion Product Page */
+
+/* #region Pricing Page */
+
+/* #region === Section 1 === */
+
+.prising {
+    font-size: 24px;
+    font-weight: 600;
+    color: #22343d;
+    margin-top: 50px;
+}
+
+.prising-p {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #22343d;
+}
+
+.prising-p-two {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #22343d;
+}
+
+.prising-font {
+    font-family: "Poppins", sans-serif;
+}
+
+.prising-inter {
+    font-family: "Inter", sans-serif;
+}
+
+/* #endregion Section 1 */
+
+/* #region === Section 2 === */
+/* #endregion Section 2 */
+
+/* #region === Section 3 === */
+/* #endregion Section 3 */
+
+/* #region === Section 4 === */
+/* #endregion Section 4 */
+
+/* #endregion Pricing Page */
 
 
 

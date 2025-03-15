@@ -3,34 +3,189 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500&family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>Document</title>
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/logo.png" alt="logo" />Product</a
-        >
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./resurses.html">Resources</a></li>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navigation-header">
+          <!-- Logo -->
+          <a href="./index.html" class="header-logo"
+            ><img src="./images/logo.png" alt="logo" />Product</a
+          >
+
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-item-link">Product</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./pricing.html" class="nav-item-link actived">Pricing</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./customers.html" class="nav-item-link">Customers</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./resurses.html" class="nav-item-link">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Buttons Header -->
+        <ul class="list-but">
+          <li class="list-but-item">
+            <button type="button" class="button-in">Sign In</button>
+          </li>
+          <li class="list-but-item">
+            <button type="button" class="button-up">Sign Up</button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
     <main>
-      <img
-        src="./images/management-img.png"
-        alt="Management"
-        height="500"
-        width="540"
-      />
+      <!-- Section 1 -->
+      <section class="Table-section">
+        <div class="container">
+          <div class="tab-div">
+            <h2 class="tab-title prising">PRICING</h2>
+            <p class="tab-descr prising-p">
+              Let’s get some real work done here.
+            </p>
+            <p class="tab-descr prising-p-two">
+              Prodict is your perfect solution for working. Get started now for
+              free
+            </p>
+            <div class="tab-div-free">
+              <ul class="tab-free-list">
+                <li>
+                  <h3 class="tab-list-h prising-font">Free</h3>
+                  <p class="tab-list-p prising-font">Brief price description</p>
+                  <div class="tab-list-div">
+                    <h4 class="tab-list-item-h prising-font">0</h4>
+                    <div class="tab-list-div-item">
+                      <p class="tab-list-item-p prising-inter">$</p>
+                      <p class="tab-list-item-month prising-font">
+                        Per / month
+                      </p>
+                    </div>
+                  </div>
+
+                  <ul class="list-tab-decr">
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p prising-inter">
+                        Only 2 Operators
+                      </p>
+                    </li>
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p prising-inter">
+                        Notifications
+                      </p>
+                    </li>
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p prising-inter">
+                        Landing Pages
+                      </p>
+                    </li>
+                  </ul>
+                  <button class="tab-list-button" type="button">
+                    Order Now
+                  </button>
+                </li>
+              </ul>
+              <ul class="tab-free-list green">
+                <li>
+                  <h3 class="tab-list-h green prising-font">Standard</h3>
+                  <p class="tab-list-p green prising-font">
+                    Brief price description
+                  </p>
+                  <div class="tab-div-list-item-div">
+                    <h4 class="tab-list-item-h green prising-font">5</h4>
+                    <div class="tab-list-div-item">
+                      <p class="tab-list-item-p-two prising-inter">$</p>
+                      <p class="tab-list-item-month grey prising-font">
+                        Per / month
+                      </p>
+                    </div>
+                  </div>
+
+                  <ul class="list-tab-decr">
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p green prising-inter">
+                        5+ Operators
+                      </p>
+                    </li>
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p green prising-inter">
+                        Notifications
+                      </p>
+                    </li>
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p green prising-inter">
+                        Landing Pages
+                      </p>
+                    </li>
+                  </ul>
+
+                  <button class="button-stnd" type="button">Order Now</button>
+                </li>
+              </ul>
+              <ul class="tab-free-list">
+                <li>
+                  <h3 class="tab-list-h prising-font">Premium</h3>
+                  <p class="tab-list-p prising-font">Brief price description</p>
+                  <div class="tab-div-list-item-div">
+                    <h4 class="tab-list-item-h prising-font">10</h4>
+                    <div class="tab-list-div-item">
+                      <p class="tab-list-item-p prising-inter">$</p>
+                      <p class="tab-list-item-month prising-font">
+                        Per / month
+                      </p>
+                    </div>
+                  </div>
+
+                  <ul class="list-tab-decr">
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p-prising prising-inter">
+                        Only 3 Operators
+                      </p>
+                    </li>
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p prising-inter">
+                        Notifications
+                      </p>
+                    </li>
+                    <li class="list-tab-decr-item">
+                      <p class="list-tab-decr-item-p prising-inter">
+                        Landing Pages
+                      </p>
+                    </li>
+                  </ul>
+                  <button class="tab-list-button" type="button">
+                    Order Now
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
